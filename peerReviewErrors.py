@@ -16,20 +16,19 @@ def displayIntro():
 	print()
 
 def chooseCave():
-    cave = ''
+	cave = ''
 	while cave != '1' and cave != '2':
 		print('Which cave will you go into? (1 or 2)')
 		cave = input()
 
-	return caves
-
+	return cave
 def checkCave(chosenCave):
 	print('You approach the cave...')
 	#sleep for 2 seconds
 	time.sleep(2)
 	print('It is dark and spooky...')
 	#sleep for 2 seconds
-	time.sleep(3)
+	time.sleep(2)
 	print('A large dragon jumps out in front of you! He opens his jaws and...')
 	print()
 	#sleep for 2 seconds
@@ -39,10 +38,10 @@ def checkCave(chosenCave):
 	if chosenCave == str(friendlyCave):
 		print('Gives you his treasure!')
 	else:
-		print 'Gobbles you down in one bite!'
+		print('Gobbles you down in one bite!')
 
 playAgain = 'yes'
-while playAgain = 'yes' or playAgain = 'y':
+while playAgain == 'yes' or playAgain == 'y':
 	displayIntro()
 	caveNumber = choosecave()
 	checkCave(caveNumber)
@@ -52,3 +51,4 @@ while playAgain = 'yes' or playAgain = 'y':
 	if playAgain == "no":
 		print("Thanks for planing")
 
+# john rosales
