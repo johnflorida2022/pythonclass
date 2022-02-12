@@ -14,6 +14,9 @@ def displayIntro():
 	is greedy and hungry, and will eat you on sight.''')
 	print()
 
+import random
+import time
+
 def chooseCave():
 	cave = ''
 	while cave != '1' and cave != '2':
@@ -42,7 +45,7 @@ def checkCave(chosenCave):
 playAgain = 'yes'
 while playAgain == 'yes' or playAgain == 'y':
 	displayIntro()
-	caveNumber = choosecave()
+	caveNumber = chooseCave()
 	checkCave(caveNumber)
 	print('Do you want to play again? (yes or no)')
 	playAgain = input()
